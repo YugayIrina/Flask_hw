@@ -1,7 +1,7 @@
 from flask import Flask
 from views import AdView
 
-app = Flask("app")
+app = Flask("app")# что ты здесь делаешь?
 
 app.add_url_rule("/advertisements/<int:id_ad>/", view_func=AdView.as_view('advertisements_delete'),
                  methods=['DELETE', 'GET'])
