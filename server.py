@@ -23,7 +23,7 @@ class CreateAdModel(pydantic.BaseModel):
     description: str
     owner: str
 
-    @pydantic.validator("title")
+    @pydantic.validator("title") #Что такое собачка? 
     def min_max_length(cls, value: str):
         if 1 > len(value) > 70:
             raise ValueError('Title should be from 1 to 70 characters')
