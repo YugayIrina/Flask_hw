@@ -5,7 +5,9 @@ from flask import Flask, jsonify
 app = Flask("app")
 
 
-class HTTPError(Exception):
+class HTTPError(Exception): # what is the keyword class? 
+    #Answer: Classes provide a means of bundling data and functionality together. 
+    #Creating a new class creates a new type of object, allowing new instances of that type to be made. 
     def __init__(self, status_code: int, message: Union[str, list, dict]):
         self.status_code = status_code
         self.message = message
