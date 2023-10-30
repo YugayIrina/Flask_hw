@@ -2,7 +2,7 @@ import pydantic
 from flask import jsonify, request
 from flask.views import MethodView
 from models import Session, AdModel
-from server import HTTPError, CreateAdModel
+from server import HTTPError, CreateAdModel #what do yoy mean from server?
 
 
 class AdView(MethodView):
